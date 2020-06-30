@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "lib": ["dom", "esnext"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "underscore": ["lodash"],
+      "*": ["src/*"],
+      "_assets/*": ["src/assets/*"],
+      "_components/*": ["src/components/*"],
+      "_navigations/*": ["src/navigations/*"],
+      "_screens/*": ["src/screens/*"],
+      "_scenes/*": ["src/scenes/*"],
+      "_styles/*": ["src/styles/*"],
+      "_redux/*": ["src/redux/*"],
+      "_api/*": ["src/api/*"],
+      "_constants/*": ["src/constants/*"],
+      "_utils/*": ["src/utils/*"],
+      "_config/*": ["src/config/*"]
+    }
+  }
+}

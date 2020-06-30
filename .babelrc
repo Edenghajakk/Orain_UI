@@ -1,0 +1,40 @@
+{
+  "presets": ["babel-preset-expo"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "cwd": "babelrc",
+        "extensions": [
+          ".ts",
+          ".tsx",
+          ".ttf",
+          ".jpg",
+          ".png",
+          ".ios.ts",
+          ".android.ts"
+        ],
+        "root": ["./src"],
+        "alias": {
+          "underscore": "lodash",
+          "_assets": "./src/assets",
+          "_components": "./src/components",
+          "_navigations": "./src/navigations",
+          "_screens": "./src/screens",
+          "_scenes": "./src/scenes",
+          "_styles": "./src/styles",
+          "_redux": "./src/redux",
+          "_api": "./src/api",
+          "_constants": "./src/constants",
+          "_utils": "./src/utils",
+          "_config": "./src/config"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "development": {
+      "plugins": ["@babel/plugin-transform-react-jsx-source"]
+    }
+  }
+}
