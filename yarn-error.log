@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add expo-linear-gradient@~8.1.0
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add expo-camera@~8.2.0
 
 PATH: 
-  C:\Users\User\bin;C:\Users\User\Downloads\cmder\bin;C:\Users\User\Downloads\cmder\vendor\bin;C:\Program Files\Git\bin;C:\Users\User\Downloads\cmder\vendor\git-for-windows\mingw64\bin;C:\Users\User\Downloads\cmder\vendor\git-for-windows\usr\local\bin;C:\Users\User\Downloads\cmder\vendor\git-for-windows\usr\bin;C:\Users\User\Downloads\cmder\vendor\git-for-windows\usr\bin;C:\Users\User\Downloads\cmder\vendor\git-for-windows\mingw64\bin;C:\Users\User\Downloads\cmder\vendor\git-for-windows\usr\bin;C:\Users\User\bin;C:\Users\User\Downloads\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\User\Downloads\cmder\vendor\conemu-maximus5;C:\Users\User\Downloads\cmder\vendor\conemu-maximus5\ConEmu;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\PuTTY;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Roaming\npm;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Users\User\AppData\Local\Yarn\bin;C:\Users\User\AppData\Local\Android\Sdk\platform-tools;C:\Gradle\gradle-5.1-all\gradle-5.1\bin;C:\Users\User\Downloads\cmder;C:\Users\User\Downloads\cmder\vendor\git-for-windows\usr\bin\vendor_perl;C:\Users\User\Downloads\cmder\vendor\git-for-windows\usr\bin\core_perl
+  C:\Users\User\bin;C:\Users\User\Downloads\cmder\bin;C:\Users\User\Downloads\cmder\vendor\bin;C:\Program Files\Git\bin;C:\Users\User\Downloads\cmder\vendor\git-for-windows\mingw64\bin;C:\Users\User\Downloads\cmder\vendor\git-for-windows\usr\local\bin;C:\Users\User\Downloads\cmder\vendor\git-for-windows\usr\bin;C:\Users\User\Downloads\cmder\vendor\git-for-windows\usr\bin;C:\Users\User\Downloads\cmder\vendor\git-for-windows\mingw64\bin;C:\Users\User\Downloads\cmder\vendor\git-for-windows\usr\bin;C:\Users\User\bin;C:\Users\User\Downloads\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\User\Downloads\cmder\vendor\conemu-maximus5;C:\Users\User\Downloads\cmder\vendor\conemu-maximus5\ConEmu;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_231\bin;C:\Program Files (x86)\Yarn\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Roaming\npm;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Users\User\AppData\Local\Yarn\bin;C:\Users\User\AppData\Local\Android\Sdk\platform-tools;C:\Gradle\gradle-5.1-all\gradle-5.1\bin;C:\Users\User\Downloads\cmder;C:\Users\User\Downloads\cmder\vendor\git-for-windows\usr\bin\vendor_perl;C:\Users\User\Downloads\cmder\vendor\git-for-windows\usr\bin\core_perl
 
 Yarn version: 
   1.22.0
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\User\Works\Orain_UI\node_modules\@babel\generator\node_modules\.bin'
+  Error: EPERM: operation not permitted, unlink 'C:\Users\User\Works\Orain_UI\node_modules\@babel\compat-data\node_modules\.bin'
 
 npm manifest: 
   {
@@ -33,7 +33,11 @@ npm manifest:
       "@types/react-native-vector-icons": "^6.4.5",
       "@use-expo/font": "^2.0.0",
       "expo": "~37.0.3",
+      "expo-constants": "~9.0.0",
       "expo-font": "~8.1.0",
+      "expo-image-picker": "~8.1.0",
+      "expo-linear-gradient": "~8.1.0",
+      "expo-permissions": "~8.1.0",
       "lodash": "^4.17.15",
       "react": "~16.9.0",
       "react-dom": "~16.9.0",
@@ -2680,6 +2684,13 @@ Lockfile:
     dependencies:
       fbjs "1.0.0"
       fontfaceobserver "^2.1.0"
+  
+  expo-image-picker@~8.1.0:
+    version "8.1.0"
+    resolved "https://registry.yarnpkg.com/expo-image-picker/-/expo-image-picker-8.1.0.tgz#014e4f4aaef4c1daf56d13de27a41ef78660aa15"
+    integrity sha512-UMHiDGiflg47A/nfnmJ1gYdB/sEoxB4STVGgMeLNYpUkVR59kUWqsGTyVEtSywNCLPuXPZVB9NaRUd81Rbs7lA==
+    dependencies:
+      expo-permissions "~8.1.0"
   
   expo-keep-awake@~8.1.0:
     version "8.1.0"

@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "HelloWorld",
+    "name": "Orain_UI",
     "slug": "Orain_UI",
     "platforms": [
       "ios",
@@ -22,7 +22,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.templiss.orainUI",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.templiss.orainUI",
+      "versionCode": 1
     }
   }
 }

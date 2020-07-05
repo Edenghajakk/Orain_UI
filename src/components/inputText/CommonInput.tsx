@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, TextInput, TouchableOpacity, Image } from 'react-native';
 import { colors } from 'constants/Colors';
+import globalStyles from 'utils/styles';
 import styles from './styles';
 
 interface Props {
@@ -30,7 +31,9 @@ const CommonInput: React.FC<Props> = (props) => {
   const [inputText, setInputText] = useState<string>('');
 
   return (
-    <View style={[styles.inputText, props.container]}>
+    <View
+      style={[styles.inputText, props.container, globalStyles.boxElevation]}
+    >
       <TextInput
         style={styles.input}
         onChangeText={(text) => setInputText(text)}

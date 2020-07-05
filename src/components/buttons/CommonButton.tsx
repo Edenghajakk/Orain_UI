@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
+import globalStyles from 'utils/styles';
 import styles from './styles';
 
 interface Props {
@@ -12,7 +13,9 @@ interface Props {
 const CommonButton: React.FC<Props> = (props) => {
   const { buttonBackgroundType } = props;
   return (
-    <View style={[{ width: '100%' }, props.container]}>
+    <View
+      style={[{ width: '100%' }, props.container, globalStyles.boxElevation]}
+    >
       <TouchableOpacity
         style={
           buttonBackgroundType === 'solid'

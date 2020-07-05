@@ -3,7 +3,6 @@ import { View, Text, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
 import CommonButton from 'components/buttons/CommonButton';
-import CommonInput from 'components/inputText/CommonInput';
 import { colors } from 'constants/Colors';
 import styles from './styles';
 
@@ -25,29 +24,27 @@ const Email: React.FC<Props> = () => {
         end={[0, 1]}
       >
         <Image
-          source={require('assets/icons/lepaks_logo.png')}
-          style={styles.imgLogo}
+          source={require('assets/icons/like.png')}
+          style={[
+            styles.imgLogo,
+            { marginVertical: 50, transform: [{ rotate: '315deg' }] },
+          ]}
         />
-        <Text style={styles.title}>Welcome to Lepaks</Text>
-        <Text style={styles.description}>Organise your trip better</Text>
-        <Text style={styles.pageText}>Now, lets Sign you Up</Text>
-        <CommonInput placeholder='Email' hasIcon={false} />
+        <Text style={styles.pageText}>Looks like all are done</Text>
+        <Text style={styles.title}>Lets proceed</Text>
       </LinearGradient>
       <View style={styles.bottomContainer}>
         <CommonButton
-          title='Next'
-          onButtonPress={() => navigation.navigate('Username')}
+          title='Proceed to Home'
+          onButtonPress={() => {}}
           buttonBackgroundType='solid'
         />
         <CommonButton
-          title='Switch to Login'
-          onButtonPress={() => {}}
+          title='Previous'
+          onButtonPress={() => navigation.goBack()}
           buttonBackgroundType='bordered'
           container={{ paddingTop: 15 }}
         />
-        <Text style={styles.underline} onPress={() => {}}>
-          Forgot Password
-        </Text>
       </View>
     </View>
   );
